@@ -1,0 +1,32 @@
+# Launch terminal
+super + Return 
+	alacritty
+
+# Launch browser
+super + b
+	firefox
+
+# Run rofi
+super + semicolon  
+	rofi -show drun
+
+# file manager
+super + t
+	thunar
+
+# switch keyboard layout to qwerty
+super + alt + q
+    setxkbmap us
+
+# flameshot screen shot tool
+alt + semicolon
+    flameshot gui
+
+# switch keyboard layout to colemak
+super + alt + c
+    setxkbmap us -variant colemak
+
+# refresh sxhkd
+super + Escape
+	pkill -USR1 -x sxhkd
+
