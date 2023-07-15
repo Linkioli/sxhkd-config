@@ -18,9 +18,13 @@ super + t
 super + alt + q
     setxkbmap us
 
-# flameshot screen shot tool
+# flameshot screenshot tool
 alt + semicolon
     flameshot gui
+
+# launch obsidian
+super + y
+	flatpak run md.obsidian.Obsidian
 
 # switch keyboard layout to colemak
 super + alt + c
