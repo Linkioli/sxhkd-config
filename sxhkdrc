@@ -14,10 +14,6 @@ super + semicolon
 super + t
 	thunar
 
-# switch keyboard layout to qwerty
-super + alt + q
-    setxkbmap us
-
 # flameshot screenshot tool
 alt + semicolon
     flameshot gui
@@ -26,9 +22,9 @@ alt + semicolon
 super + y
 	flatpak run md.obsidian.Obsidian
 
-# switch keyboard layout to colemak
-super + alt + c
-    setxkbmap us -variant colemak
+# toggle keyboard layouts between qwerty and colemak
+super + z
+	sleep 0.1 && if setxkbmap -query | grep -q "colemak"; then setxkbmap us; else setxkbmap us -variant colemak; fi
 
 # refresh sxhkd
 super + Escape
